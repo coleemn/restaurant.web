@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: #F4EBDD;
+  --color-charcoal: #242321;
+  --color-ember: #B85C38;
+  --color-earth: #75533D;
+  --color-green: #526447;
+}
+
+body {
+  background-color: #F4EBDD;
+  color: #242321;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Subtle, tasteful African-inspired geometric border accent */
+.african-pattern-line {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #B85C38,
+    #B85C38 8px,
+    transparent 8px,
+    transparent 16px,
+    #75533D 16px,
+    #75533D 24px,
+    transparent 24px,
+    transparent 32px
+  );
+  height: 4px;
+  opacity: 0.85;
+}
+
+.subtle-grid-bg {
+  background-image: radial-gradient(rgba(117, 83, 61, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom warm scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EBDD;
+}
+::-webkit-scrollbar-thumb {
+  background: #75533D;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B85C38;
+}
